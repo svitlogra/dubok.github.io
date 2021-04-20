@@ -14,14 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 
-
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
 <body>
-<header class="header">
+<header class="header" id="header">
 
     <div class="social__nav">
        <div class="container">
@@ -41,7 +42,7 @@
     </div>  <!-- end-social__nav -->
   
     <div class="container">
-        <div class="main__nav">
+        <div class="navigation" id="navigation">
             <div class="nav__logo">
                 <img class="logo" src="logo.svg" alt="logo">
             </div>
@@ -55,13 +56,15 @@
                    <a href="#">Бронювання</a>
               
             </nav>
-            
+            <button class="burger" type="button">
+                <span class="burger__item">Menu</span>
+            </button>
         </div> <!-- end-main__nav -->
     </div>
 </header>
     
 <!--hero__box-->
-<div class="hero__box">
+<div class="hero" id="hero">
     <div class="container">
         <div class="hero__items">
             <h2 class="hero__subtitle">Готельно-ресторанний <br> комплекс</h2>
@@ -78,13 +81,17 @@
     <section class="about" id="about">
         <img class="img__device" src="img\homepage\photo1.png" alt="">
         <div class="about__images">
-                <div class="img__row">
-                <img class="img__vrtcl" src="img\homepage\about1.png" alt="">
-                <img class="img__hrzntl" src="img\homepage\about2.png" alt="">
+            <div class="img__row">
+                <div class="img__vrtcl"><img src="img\homepage\about1.png" alt="">
+                </div>
+                <div class="img__hrzntl"><img src="img\homepage\about2.png" alt="">
+                </div>
             </div>
             <div class="img__row"> 
-                <img class="img__hrzntl" src="img\homepage\about3.png" alt="">
-                <img class="img__vrtcl" src="img\homepage\about4.png" alt="">
+                <div class="img__hrzntl"><img src="img\homepage\about3.png" alt="">
+                </div>
+                <div class="img__vrtcl"><img src="img\homepage\about4.png" alt="">
+                </div>
             </div>
         </div> <!-- about__images -->
          
@@ -221,8 +228,8 @@
                 </div>
                
                 <div class="menu__images">
-                   <img class="menu__photo" src="/img/homepage/food1.png" alt="">
-                   <img class="menu__photo" src="/img/homepage/food2.png" alt="">
+                   <div class="menu__photo"><img src="/img/homepage/food1.png" alt=""></div>
+                   <div class="menu__photo"><img src="/img/homepage/food2.png" alt=""></div>
                    
                 </div>
             </div>  <!-- /.menu__box -->  
@@ -307,6 +314,10 @@
         </div>
     </div>
 </footer>
+    
+ <!-- JavaScript -->
+ 
+<script src="js\app.js"></script>
     
 </body> 
 
